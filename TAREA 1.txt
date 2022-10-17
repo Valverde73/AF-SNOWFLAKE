@@ -1,0 +1,52 @@
+/****************** Snowflake web console ************************/
+
+Goal of this assignment is to introduce you to basic snowflake commands.
+
+Once you login, please execute below commands,
+
+1 . USE WAREHOUSE COMPUTE_WH
+
+2. USE DATABASE DEMO_DB
+
+3. SHOW TABLES
+
+4. SHOW VIEWS
+
+5. Execute below command to create table in demo db.
+
+          USE ROLE ACCOUNTADMIN;
+
+         CREATE TABLE DEMO_DB.PUBLIC.CALL_CENTER
+
+         AS
+
+         SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.CALL_CENTER;
+
+         SELECT COUNT(*) FROM DEMO_DB.PUBLIC.CALL_CENTER;
+
+         SELECT * FROM DEMO_DB.PUBLIC.CALL_CENTER;
+
+6. Create another table.
+
+          CREATE TABLE DEMO_DB.PUBLIC.CALL_CENTER_TEST LIKE DEMO_DB.PUBLIC.CALL_CENTER
+
+7. Copy data from table CALL_CENTER  to a new table.
+
+          CREATE TABLE DEMO_DB.PUBLIC.CALL_CENTER_TEST2 CLONE DEMO_DB.PUBLIC.CALL_CENTER
+
+8. Execute,
+
+           SHOW TABLES
+Preguntas de esta tarea
+
+1.  How many records you see in table DEMO_DB.PUBLIC.CALL_CENTER_TEST2
+
+2.  When you execute SHOW TABLES it will show you information about table size. Can you mention DEMO_DB.PUBLIC.CALL_CENTER_TEST2 table size.
+
+3.  Once you create  table DEMO_DB.PUBLIC.CALL_CENTER, click on query id and tell me how many partitions are there for this table.
+
+4.  What is the retention period of table DEMO_DB.PUBLIC.CALL_CENTER.
+
+5.  How many records you have in table DEMO_DB.PUBLIC.CALL_CENTER_TEST
+
+6.  Can i execute command like SHOW TABLES LIKE 'CALL%'
