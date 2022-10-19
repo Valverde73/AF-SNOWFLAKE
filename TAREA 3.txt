@@ -1,0 +1,38 @@
+Perquisite :
+
+                    You should be having snowflake trial account created.
+
+                    Use below role and database to do this experiment,
+
+                            USE ROLE ACCOUNTADMIN.
+
+                            USE DATABASE DEMO_DB.
+
+                            USE default `COMPUTE_WH` XS warehouse for this experiment.
+
+
+Please execute the queries mentioned below and capture the query profile result.
+
+
+Step 1 :
+
+            select * from "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1000"."PART"
+
+            Mention, Bytes scanned,
+           
+
+
+Step 2 :
+
+             select p_partkey,p_name from "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1000"."PART";
+
+             Mention bytes scanned.
+Preguntas de esta tarea
+
+Mention below, bytes scanned for step 1.
+
+Mention below, bytes scanned for step 2.
+
+Why there is a difference in bytes scanned ? please leave your opinion below.
+
+When you execute step 2, will data again be scanned from remote storage ? leave your comments below.
