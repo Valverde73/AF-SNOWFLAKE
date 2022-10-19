@@ -1,0 +1,79 @@
+Perquisite :
+
+                  You should be having snowflake trial account created.
+
+                  Use below role and database to do this experiment,
+
+                              USE ROLE ACCOUNTADMIN.
+
+                              USE DATABASE  DEMO_DB.
+
+                              USE default `COMPUTE_WH` XS warehouse for this experiment.
+
+
+Follow below steps :
+
+Scenario 1 :
+
+                    Execute below query,
+
+                    SELECT * FROM "SNOWFLAKE_SAMPLE_DATA"."TPCDS_SF100TCL"."CUSTOMER"
+
+                    Click on query id and browse to profile page.
+
+                    You need to answer questions by looking at the profile page.
+
+
+Scenario 2 :
+
+                      Execute below query,
+
+                      SELECT * fROM "SNOWFLAKE_SAMPLE_DATA"."TPCDS_SF100TCL" ."CUSTOMER"
+
+                      Click on query id and browse to profile page.
+
+                      You need to answer questions by looking at the profile page.
+
+
+Scenario 3 :
+
+                     Execute below query,
+
+                     SELECT * FROM "SNOWFLAKE_SAMPLE_DATA"."TPCDS_SF100TCL"."CUSTOMER"
+
+                     Click on query id and browse to profile page.
+
+                    You need to answer questions by looking at the profile page.
+
+Scenario 4 :
+
+                     Execute below query,
+
+                     
+
+    SELECT * FROM "SNOWFLAKE_SAMPLE_DATA"."TPCDS_SF100TCL"."CUSTOMER"
+                         where c_customer_sk='90093905'
+
+Preguntas de esta tarea
+
+Scenario 1 & 2 : What is total processing time ?
+
+Scenario 1 & 2 : Remote disk I/O percentage ?
+
+Scenario 1 & 2 : Initialization %
+
+Scenario 1 & 2 : Bytes written to result ?
+
+Scenario 1 & 2 : Percentage scanned from cache ?
+
+Scenario 3 : Execute query and mention your observation. How much time query took to execute ?
+
+Observe your results for Question 2 , Question 5. Why there is a difference ? Leave your comments below.
+
+In Scenario 3, why query result came back quick ? What's your opinion ?
+
+For scenario 1 and 2 which processing step consumed most of the time ? in the whole process.
+
+Is query in scenario 1 and scenario 2 is same ? Is query in scenario  1 and 3 are same ?
+
+When you execute query from scenario 4. Will result returns from cache or from remote storage ?
