@@ -1,0 +1,118 @@
+STEP 1 :
+
+            Download the file attached to the resource.
+
+STEP 2 :
+
+            Create table as
+
+
+CREATE OR REPLACE TRANSIENT TABLE TOBACCO
+
+(
+
+        Year       NUMBER ,
+
+        Quarter NUMBER(1,0) ,
+
+        LocationAbbr VARCHAR(2) ,
+
+        LocationDesc VARCHAR(50) ,
+
+        TopicDesc VARCHAR ,
+
+        MeasureDesc VARCHAR(50) ,
+
+        DataSource VARCHAR(3) ,
+
+        ProvisionGroupDesc VARCHAR(50) ,
+
+        ProvisionDesc VARCHAR(50) ,
+
+        ProvisionValue VARCHAR ,
+
+        Citation VARCHAR ,
+
+        ProvisionAltValue NUMBER ,
+
+        DataType VARCHAR ,
+
+        Comments VARCHAR ,
+
+        Enacted_Date DATE ,
+
+        Effective_Date DATE ,
+
+        GeoLocation ARRAY ,
+
+        DisplayOrder NUMBER ,
+
+        TopicTypeId VARCHAR(3) ,
+
+        TopicId VARCHAR(100) ,
+
+        MeasureId VARCHAR(20) ,
+
+        ProvisionGroupID VARCHAR(10) ,
+
+        ProvisionID NUMBER
+
+);
+
+
+STEP 3:
+
+   Create a named stage by name, My_internal_stage.
+
+   Create a file format by name My_csv_format.
+
+STEP 4 :
+
+    Login to snowsql and upload data from your local system to the named stage.
+
+STEP 5 :
+
+   1. Write SQL query to check uploaded data in the named stage(internal stage).  ( You should write it in web console.)
+
+   2. Count the number of records in staging area. Without loading data to a snowflake.
+
+STEP 6:
+
+   > Write copy command to load data from named stage to table.
+
+                 While Loading data using copy command please apply below transformation to `LocationAbbr` column.
+
+                                                       if LocationAbbr='GU' then code it as GK.
+
+                 This condition you should apply within copy command only.
+
+  > You should not use any inline copy options in copy command like on_error, pattern etc... you should set these properties within stage object itself.
+
+   > If you face any errors allow records to get rejected.
+
+   > Collect all rejected records. How many rejected records are created and what is the rejection reason.
+
+   > Create a separate table by name, TOBACCO_REJECTED to keep all rejected records.
+
+STEP 7 :
+
+   Mention all the reasons for records rejection.
+
+STEP 8:
+
+    remove the uploaded file in named staging area.
+Preguntas de esta tarea
+
+When you create a table a default staging area is assigned to the table. Can you mention a few drawbacks of using table staging area versus named staging area?
+
+When you upload data from local system to staging area which compression format is used.
+
+When you try to execute copy command multiple times after copying your data. Will the data again get copied ? if not why.
+
+For how long rejected records will be available in snowflake? what command you use to retrieve rejected records in snowflake.
+
+How many rejected records you got in your first run.
+
+How you analyze the reason for rejection.  Please mention your analysis.
+
+Write command to list files in staging area.
