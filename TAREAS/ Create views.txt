@@ -1,8 +1,3 @@
-Prerequisite :
-
-Please go through lecture, Difference between normal view and secure view.
-
-
 Please go through below requirement,
 
 You have two tables,
