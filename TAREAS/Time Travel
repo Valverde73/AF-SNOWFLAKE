@@ -1,0 +1,72 @@
+Prerequisite:                  
+
+You should be having snowflake trial account created.
+
+                     Use below role and database to do this experiment,
+
+                           USE ROLE ACCOUNTADMIN.
+
+                           USE DATABASE DEMO_DB.
+
+                           USE default `COMPUTE_WH` XS warehouse for this experiment.
+
+                           Please go through lecture, Time travel demo and article, More on time travel before starting this assignment.
+
+Please follow below steps to complete this assignment,
+
+Step 1 :
+
+Create table,
+
+    CREATE OR REPLACE TRANSIENT TABLE DEMO_DB.PUBLIC.PART
+    AS
+    SELECT * FROM "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1000"."PART"
+
+
+Step 2 :
+
+Execute :
+
+Note query id for each of these executions.
+
+    UPDATE DEMO_DB.PUBLIC.PART
+    SET P_SIZE='700'
+    WHERE P_PARTKEY='15032619';
+     
+    Query id-------?
+
+    UPDATE DEMO_DB.PUBLIC.PART
+    SET P_SIZE='701'
+    WHERE P_PARTKEY='15032622';
+     
+    Query id-------?
+
+
+Step 3 :
+
+Time travel 10 mins back from current time. Write your query below.
+
+
+Step 4 :
+
+Travel back to state of table before execution of second update statement.
+
+Mention your query below.
+
+
+Step 5 :
+
+After some time business asks to you time travel and revert back the changes you did on the table.
+
+Basically you should bring back PART table to it's original state before execution of those update statements.
+
+How you do that ? Mention your solution below.
+
+
+Preguntas de esta tarea
+
+Mention below your solution for step 3.
+
+Mention below your solution for step 4.
+
+Mention below your solution for step 5.
