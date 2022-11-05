@@ -1,0 +1,29 @@
+Prerequisite :
+
+Please go through lecture, Difference between normal view and secure view.
+
+
+Please go through below requirement,
+
+You have two tables,
+
+1. PRODUCT. ------> size, 500 GB
+
+2 .SALES. ---------> size , 1 TB
+
+Business analysts provides you with some complex logic to pull some specific products based on there sales history.
+
+Your job is to create a view, based on the provided logic and expose that view to your analytical team which is  handled by Business analysts.
+
+
+Based on the above requirement, which type of view you will prefer to create and why ?
+
+
+For the same requirement above, now Business wants to sell this data to different client. In that case, which view you will prefer to create ?
+Preguntas de esta tarea
+
+Based on the above requirement, which type of view you will prefer to create and why ?
+
+For the same requirement above, now Business wants to sell this data to different client. In that case, which view you will prefer to create ?
+
+What is the disadvantage of using secure view ?

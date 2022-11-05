@@ -1,0 +1,33 @@
+Prerequisites :
+
+Go through lecture, Data share demo.
+
+USE ROLE ACCOUNTADMIN role to complete this assignment.
+
+
+Please follow below steps to complete this assignment,
+
+Assume you have two snowflake accounts,
+
+1. gia76901
+
+2. hra87634
+
+You are asked to share database in 1st account with 2nd account.
+
+Database name : Products
+
+Schema : public
+
+Table name : Electronics
+
+share object name : products_s
+Preguntas de esta tarea
+
+Write your command to create database.
+
+Write your command to create share object.
+
+Mention below all grant permission you provide to share object.
+
+Mention below your command to add 2nd account to share object.
