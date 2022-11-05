@@ -1,0 +1,35 @@
+Please go through above lectures before taking this assignment.
+
+
+Follow below steps to complete this assignment,
+
+Step 1 :
+
+Find below requirements,
+
+    aws s3 : s3://mybucket/snowpipe/
+
+    stage object name : my_pipe_stage.
+
+    integration object name : my_s3_int.
+
+    File format name : my_s3_csv_format.
+
+    Target table : EMP_SNOWPIPE.
+
+
+Step 2 :
+
+Using details in step 1, write command to create stage object , my_pipe_stage.
+
+
+Step 3 :
+
+Create snowpipe by name, my_snowpipe using above details. Snowpipe should load data to emp_snowpipe table.
+
+Mention your syntax below.
+Preguntas de esta tarea
+
+Mention your syntax for step 2.
+
+Mention your syntax for step 3.
