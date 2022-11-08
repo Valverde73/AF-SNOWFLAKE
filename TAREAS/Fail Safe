@@ -1,0 +1,36 @@
+Prerequisites :
+
+Please go through above lectures on fail safe before solving this assignment.
+
+Also go through article above this assignment to check the syntax.
+
+
+
+Scenario :
+
+You have been give a task to create database in snowflake.
+
+1. You have to create development database by name, UDEMY_DEV.
+
+2. You have to create UAT database by name , UDEMY_UAT.
+
+3. You have to create PROD database by name , UDEMY_PROD.
+
+
+
+For DEV database time travel and fail safe is not required.
+
+For UAT database it's ok to have time travel of 1 day but fail safe is not required.
+
+For PROD database time travel of 5 days is required. Enable fail safe for prod.
+
+
+
+Going through above requirement can you write commands to create respective database.
+
+Preguntas de esta tarea
+Write your command to create DEV database.
+
+Write your command to create UAT database.
+
+Write your command to create PROD database.
