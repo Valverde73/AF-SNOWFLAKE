@@ -17,10 +17,6 @@ grant usage on database reader_sales to role public;
 grant usage on schema reader_sales.public to role public;
 grant select on table reader_sales.public.customer to role public;
 
-grant usage on warehouse reader_wh to role public;
-
-grant all on  warehouse reader_wh to role public;
-
 alter share sales_s add accounts=qxa57318;
 
 ## Run below commands in reader account.
